@@ -37,15 +37,15 @@ const getSingleSheetJSON = (workbook, sheetNumber = 0, headerRow = 0) => {
 /*
 Accepts two arguments.
 
-newObjectMap - an object specifying which keys need to be mapped and renamed. 
+1. newObjectMap - an object specifying which keys need to be mapped and renamed. 
 { 
     key1: newKey1,
     key2: newKey2 
 }
 
-The worksheet with all the data.
+2. The worksheet with all the data.
 
-Creates a new list of objects with the new keys. 
+Returns a new list of objects with the new keys. 
 
 [
     { newkey1: key1 value }, 
