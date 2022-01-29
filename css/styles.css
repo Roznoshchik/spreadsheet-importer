@@ -1,0 +1,49 @@
+.inputGroup {
+  background-color: #dbdbdb;
+  padding: 8px 16px;
+  margin: 0 0 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.inputGroup label {
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.inputGroup input, .inputGroup select {
+  width: 300px;
+  margin-bottom: 8px;
+}
+.inputGroup .width-100 {
+  width: 100%;
+}
+
+.results {
+  border: #424242 2px solid;
+  background-color: #dbdbdb;
+}
+
+.spacer {
+  margin: 20px 0px;
+}
+
+.newObject {
+  margin-bottom: 12px;
+}
+.newObject input {
+  min-width: 400px;
+  width: auto;
+}
+
+#jsonData {
+  background-color: #dbdbdb;
+  height: 450px;
+  overflow: scroll;
+  width: auto;
+}
+
+button {
+  margin: 8px 8px 8px 0px;
+}
+
+/*# sourceMappingURL=styles.css.map */

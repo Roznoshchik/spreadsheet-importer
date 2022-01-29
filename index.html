@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Import Spreadsheets</title>
+  <meta name="description" content="Convert spreadsheets to JS objects">
+  <meta name="author" content="RR">
+
+  <meta property="og:title" content="Convert spreadsheets to JS objects">
+  <meta property="og:type" content="app">
+  <meta property="og:description" content="A tool that imports spreadsheets and helps you convert them into JS objects so that you can then use the data in your app.">
+
+  <!-- <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <h2 >Step 1</h2>
+    <div id="getFileForm">
+        <div class="inputGroup">
+            <label for="fileUpload">Choose a spreadsheet file:</label>
+            <input
+                type="file"
+                id="fileUpload"
+                name="fileUpload"
+                accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+            >
+            <div class="width-100"><button role="button" type="button" onclick="getFile()">Open File</button></div>
+        </div>
+    </div>
+    <div id="stepTwo"></div>
+    <div id="stepTwoTitle"></div>
+    <div id="initialPreview"></div>
+    <div id="stepThree"></div>
+    <div id="newObject"></div>
+    <div id="stepFour"></div>
+    <div id="newObjectPreview"></div>
+    <div id="stepFive"></div>
+
+
+<script src="scripts/app.js"></script>
+<script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+</body>
+</html>
