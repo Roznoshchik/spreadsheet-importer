@@ -78,6 +78,15 @@ const transformWorksheet = (newObjectMap, worksheet) => {
 
 let workbook, worksheet
 
+// placeholder for the newly created object. 
+let newObjects = []
+
+
+/**************************************/
+/*                                    */
+/*             DOM Stuff              */
+/*                                    */
+/**************************************/
 
 
 // gets spreadsheet from local os
@@ -156,8 +165,6 @@ const loadStepThree = () => {
 
 }
 
-// placeholder for the newly created object. 
-let newObjects = []
 
 // processes the user input and then calls the transformWorsheet function to create the new object representation. 
 const createNewObject = () => {
@@ -196,11 +203,21 @@ const generateJSON = () => {
     showResult(res, '#stepFive')
 }
 
+
+
+/**************************************/
+/*                                    */
+/*              helpers               */
+/*                                    */
+/**************************************/
+
+
 // copies json to clipboard
 const copyToClipboard = () => {
     let data = JSON.stringify(newObjects,null, 2)
     navigator.clipboard.writeText(data)
 }
+
 
 // This navigates the rows in the spreadsheet / new object for previewing the data. 
 const iterateRows = (row, sheet, destination) => {
