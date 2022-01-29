@@ -55,7 +55,7 @@ Returns a new list of objects with the new keys.
 */
 
 const transformWorksheet = (newObjectMap, worksheet) => {
-    newObjects = []
+    const newObjects = []
     worksheet.forEach(function(row, index){
         let keys = Object.keys(newObjectMap)
         const obj = {}
