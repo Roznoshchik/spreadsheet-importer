@@ -11,4 +11,4 @@ A simple application that uses sheet.js to import a spreadsheet and prepare it f
 
 You can see the application at the following location. 
 
-[https://rch.work/spreadsheet-importer](rch.work/spreadsheet-importer)
+[code.rch.work/spreadsheet-importer](https://code.rch.work/spreadsheet-importer)
